@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EntriPerpustakaan">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvIsbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISBN" />
+
+            <EditText
+                android:id="@+id/etIsbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvjdlbuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul Buku" />
+
+            <EditText
+                android:id="@+id/etjdlbuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvpengarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengarang" />
+
+            <EditText
+                android:id="@+id/etpengarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvpenerbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penerbit" />
+
+            <EditText
+                android:id="@+id/etpenerbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvthnterbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tahun Terbit" />
+
+            <EditText
+                android:id="@+id/etthnterbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvTempetterbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempat Terbit" />
+
+            <EditText
+                android:id="@+id/etTempatterbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCetakanKe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cetakan Ke" />
+
+            <EditText
+                android:id="@+id/etCetakanKe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvJmlhHal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Halaman" />
+
+            <EditText
+                android:id="@+id/etjmlhHal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvKlasifikasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Klasifikasi" />
+
+            <Spinner
+                android:id="@+id/spnKlasifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCoverbuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cover Buku" />
+
+            <Button
+                android:id="@+id/btnCariCover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cari Cover..." />
+
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imgfoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Simpan" />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNmPerpustakaan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="5dp"
+        android:text="Perpustakaan 015"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPerpustakaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="138dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv2judulbukulv"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingLeft="5dp"
+                    android:text="Judul Buku"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv2pengarangLp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:paddingLeft="5dp"
+                    android:text="Nama Pengarang"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/lvPerpustakaan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
